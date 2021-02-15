@@ -4,7 +4,7 @@
   "scripts": {
     "build": "lerna run build --parallel",
     "lint": "eslint .",
-    "publish:ci": "lerna publish",
+    "release:ci": "lerna publish --yes",
     "test": "lerna run test --parallel",
     "test:coverage": "jest --coverage"
   },

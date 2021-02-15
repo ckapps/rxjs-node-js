@@ -12,15 +12,28 @@ jobs:
       - uses: actions/checkout@v2
         with:
           # this seems to be needed by lerna to work as expected
-          all_commits: true
-          all_tags: true
+          fetch-depth: 0
+      # pulls all tags (needed for lerna / semantic release to correctly version)
+      - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
+      - name: Setup git
+        run: |
+          git config --global user.name "Bump version - ${{ github.repository }} (by ${{ github.actor }})"
+          git config --global user.email "${{ github.repository }}-version-bump@users.noreply.github.com"
+
       - run: npm ci
       - run: npm run build
-      - run: npm run publish:ci
+      - run: npm run release:ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_ADMIN_PUSH_TOKEN }}
+          tags: true
