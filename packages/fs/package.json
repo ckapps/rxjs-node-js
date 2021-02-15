@@ -2,7 +2,10 @@
   "name": "@ckapp/rxjs-node-fs",
   "version": "0.0.0",
   "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc -b ./tsconfig.json",
     "test": "jest"
   },
   "dependencies": {

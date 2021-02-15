@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "build": "lerna run build --parallel",
     "lint": "eslint .",
     "test": "lerna run test --parallel",
     "test:coverage": "jest --coverage"
