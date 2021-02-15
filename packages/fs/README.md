@@ -6,7 +6,7 @@
 
 # @ckapp/rxjs-node-fs
 
-Monorepo for providing [RxJS](https://www.npmjs.com/package/rxjs) extensions when working with `node.js`.
+This package contains [RxJS](https://www.npmjs.com/package/rxjs) observable/operators for the `fs` module of `node.js`.
 
 ## Installation and Usage
 
