@@ -26,7 +26,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: npm run release:ci
+      - run: npm run ci:release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 

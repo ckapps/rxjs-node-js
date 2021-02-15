@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "build": "lerna run build --parallel",
+    "ci:release": "npm run release -- --yes",
     "lint": "eslint .",
-    "release:ci": "lerna publish --yes",
+    "release": "lerna publish --conventional-graduate",
     "test": "lerna run test --parallel",
     "test:coverage": "jest --coverage"
   },
