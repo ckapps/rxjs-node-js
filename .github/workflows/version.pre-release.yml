@@ -33,9 +33,3 @@ jobs:
       - run: npm run ci:release:pre
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GH_ADMIN_PUSH_TOKEN }}
-          tags: true
