@@ -18,6 +18,14 @@
     "build": "tsc -b ./tsconfig.json",
     "test": "jest"
   },
+  "files": [
+    "**/*.d.ts",
+    "dist/**/!(*.tsbuildinfo)",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "dependencies": {
     "rxjs": "^6.6.3"
   }
