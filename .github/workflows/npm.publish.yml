@@ -13,8 +13,6 @@ jobs:
         with:
           # this seems to be needed by lerna to work as expected
           fetch-depth: 0
-      # pulls all tags (needed for lerna / semantic release to correctly version)
-      - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v1
