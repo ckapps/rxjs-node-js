@@ -4,8 +4,10 @@
   "scripts": {
     "build": "lerna run build --parallel",
     "ci:release": "npm run release -- --yes",
+    "ci:release:pre": "npm run release:pre -- --yes",
     "lint": "eslint .",
     "release": "lerna publish --conventional-graduate",
+    "release:pre": "lerna publish --conventional-prerelease",
     "test": "lerna run test --parallel",
     "test:coverage": "jest --coverage"
   },
