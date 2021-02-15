@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0-alpha.0](https://github.com/ckapps/rxjs-node-js/compare/v0.1.1...v0.2.0-alpha.0) (2021-02-15)
+
+
+### Features
+
+* add writeFile ([8001be3](https://github.com/ckapps/rxjs-node-js/commit/8001be3d064071cbb64b8d5757218041ed2633bd))
+
+
+
+
+
 ## [0.1.1](https://github.com/ckapps/rxjs-node-js/compare/v0.1.0...v0.1.1) (2021-02-15)
 
 **Note:** Version bump only for package root
