@@ -1,6 +1,6 @@
 {
   "name": "@ckapp/rxjs-node-fs",
-  "version": "0.1.2",
+  "version": "0.2.0-alpha.2",
   "author": "Chris",
   "bugs": {
     "url": "https://github.com/ckapps/rxjs-node-js/issues"
@@ -12,15 +12,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc -b ./tsconfig.json",
     "test": "jest"
   },
   "files": [
     "**/*.d.ts",
-    "dist/**/!(*.tsbuildinfo)",
+    "lib/**/!(*.tsbuildinfo)",
     "CHANGELOG.md",
     "LICENSE",
     "package.json",
