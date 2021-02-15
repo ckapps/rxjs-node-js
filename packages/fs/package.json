@@ -1,8 +1,11 @@
 {
-  "name": "@ckapps/rxjs-node-fs",
+  "name": "@ckapp/rxjs-node-fs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "precommit": "lint-staged"
+    "test": "jest"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.3"
   }
 }

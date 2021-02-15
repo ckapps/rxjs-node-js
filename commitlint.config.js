@@ -1,1 +1,6 @@
-module.exports = { extends: ['@commitlint/config-conventional'] };
+module.exports = {
+  extends: [
+    '@commitlint/config-lerna-scopes',
+    '@commitlint/config-conventional',
+  ],
+};
