@@ -1,6 +1,8 @@
 {
-  "version": "0.2.0-alpha.1",
-  "packages": ["packages/*"],
+  "version": "0.2.0-alpha.2",
+  "packages": [
+    "packages/*"
+  ],
   "command": {
     "publish": {
       "conventionalCommits": true,
@@ -10,7 +12,10 @@
       "stream": true
     },
     "version": {
-      "allowBranch": ["master", "release/*"]
+      "allowBranch": [
+        "master",
+        "release/*"
+      ]
     }
   }
 }
