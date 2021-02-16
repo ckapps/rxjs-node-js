@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/ckapps/rxjs-node-js/compare/v0.2.0...v0.3.0) (2021-02-16)
+
+
+### Bug Fixes
+
+* **rxjs-node-fs:** improve event typings ([9276dbc](https://github.com/ckapps/rxjs-node-js/commit/9276dbce29b27768d3d2423fdb0a66b8cc83e7fc))
+
+
+### Features
+
+* **rxjs-node-fs:** add stat ([e957b72](https://github.com/ckapps/rxjs-node-js/commit/e957b72dbbbbc077168f41de589062d45cc67e62))
+* **rxjs-node-fs:** add watch ([f1949f5](https://github.com/ckapps/rxjs-node-js/commit/f1949f566f4e53a7d431377294dd3396fb01522a))
+
+
+
+
+
 # [0.2.0](https://github.com/ckapps/rxjs-node-js/compare/v0.2.0-alpha.2...v0.2.0) (2021-02-15)
 
 **Note:** Version bump only for package @ckapp/rxjs-node-fs
