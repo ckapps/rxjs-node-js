@@ -5,7 +5,10 @@ import { from, Observable } from 'rxjs';
 /**
  * Asynchronous readdir(3) - read a directory.
  * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
- * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+ * @param options Use to specifiy the encoding.
+ *
+ * @returns
+ * An observable that emits with the contents of the specified directory at `path`.
  */
 export function readDir(
   path: PathLike,
@@ -15,7 +18,10 @@ export function readDir(
 /**
  * Asynchronous readdir(3) - read a directory.
  * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
- * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+ * @param options Use to specifiy the encoding.
+ *
+ * @returns
+ * An observable that emits with the contents of the specified directory at `path`.
  */
 export function readDir(
   path: PathLike,
@@ -25,7 +31,10 @@ export function readDir(
 /**
  * Asynchronous readdir(3) - read a directory.
  * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
- * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
+ * @param options Use to specifiy the encoding.
+ *
+ * @returns
+ * An observable that emits with the contents of the specified directory at `path`.
  */
 export function readDir(
   path: PathLike,
@@ -33,9 +42,12 @@ export function readDir(
 ): Observable<Dirent[]>;
 
 /**
+ * Asynchronous readdir(3) - read a directory.
+ * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+ * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
  *
- * @param path
- * @param options
+ * @returns
+ * An observable that emits with the contents of the specified directory at `path`.
  */
 export function readDir(
   path: PathLike,
