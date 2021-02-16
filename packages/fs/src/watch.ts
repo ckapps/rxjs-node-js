@@ -66,13 +66,13 @@ export class WatchChangeEvent<T> extends WatchEvent<T, 'change'> {
 
 export function watch(
   path: PathLike,
-  options: WatchOptions<'buffer'>,
-): Observable<WatchEvent<Buffer>>;
+  options: WatchOptions<BufferEncoding>,
+): Observable<WatchEvent<string>>;
 
 export function watch(
   path: PathLike,
-  options: WatchOptions<BufferEncoding>,
-): Observable<WatchEvent<string>>;
+  options: WatchOptions<'buffer'>,
+): Observable<WatchEvent<Buffer>>;
 
 /**
  * Watches the given `path`.
