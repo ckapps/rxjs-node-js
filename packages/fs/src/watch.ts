@@ -28,15 +28,17 @@ export class WatchError<T extends PathLike> extends Error {
   }
 }
 
+type Events = 'change' | 'rename';
+
 /**
  * Event object
  */
-export class WatchEvent<T = string | Buffer> {
+class WatchEvent<T = string | Buffer, E extends Events = Events> {
   constructor(
     /**
      * The event type
      */
-    public readonly event: 'change' | 'rename',
+    public readonly event: E,
     /**
      * The associated file
      */
@@ -47,7 +49,7 @@ export class WatchEvent<T = string | Buffer> {
 /**
  * Event object used in case of a rename event
  */
-export class WatchRenameEvent<T> extends WatchEvent<T> {
+export class WatchRenameEvent<T> extends WatchEvent<T, 'rename'> {
   constructor(readonly filename: T) {
     super('rename', filename);
   }
@@ -56,7 +58,7 @@ export class WatchRenameEvent<T> extends WatchEvent<T> {
 /**
  * Event object used in case if a file was changed
  */
-export class WatchChangeEvent<T> extends WatchEvent<T> {
+export class WatchChangeEvent<T> extends WatchEvent<T, 'change'> {
   constructor(readonly filename: T) {
     super('change', filename);
   }
