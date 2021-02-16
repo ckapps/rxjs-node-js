@@ -22,4 +22,6 @@ npm i @ckapp/rxjs-node-fs
 
 - `readDir`
 - `readFile`
+- `stat`
+- `watch`
 - `writeFile`
