@@ -1,5 +1,5 @@
 import { promises, PathLike } from 'fs';
-import { from, Observable } from 'rxjs';
+import { defer, Observable } from 'rxjs';
 
 /**
  * @param path Path to the file
@@ -39,5 +39,5 @@ export function readFile(
     | undefined
     | null,
 ): Observable<string | Buffer> {
-  return from(promises.readFile(path, options));
+  return defer(() => promises.readFile(path, options));
 }
