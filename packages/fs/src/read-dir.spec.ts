@@ -21,7 +21,9 @@ describe('readDir', () => {
       ['path', { withFileTypes: false }],
       ['path', { encoding: 'utf-8', withFileTypes: false }],
     ])('should pass path %p and options %p', (path, options: any) => {
-      readDir(path, options);
+      const source$ = readDir(path, options);
+      expect(spy).not.toBeCalled();
+      source$.subscribe();
       expect(spy).toBeCalledWith(path, options);
     });
   });
@@ -40,6 +42,9 @@ describe('readDir', () => {
       ['path', { encoding: 'buffer', withFileTypes: false }],
     ])('should pass path %p and options %p', (path, options: any) => {
       readDir(path, options);
+      const source$ = readDir(path, options);
+      expect(spy).not.toBeCalled();
+      source$.subscribe();
       expect(spy).toBeCalledWith(path, options);
     });
   });
@@ -50,6 +55,9 @@ describe('readDir', () => {
       ['more-path', { withFileTypes: true }],
     ])('should pass path %p and options %p', (path, options: any) => {
       readDir(path, options);
+      const source$ = readDir(path, options);
+      expect(spy).not.toBeCalled();
+      source$.subscribe();
       expect(spy).toBeCalledWith(path, options);
     });
   });

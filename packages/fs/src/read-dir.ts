@@ -1,6 +1,6 @@
 import { promises, Dirent, PathLike } from 'fs';
 
-import { from, Observable } from 'rxjs';
+import { defer, Observable } from 'rxjs';
 
 /**
  * Asynchronous readdir(3) - read a directory.
@@ -58,5 +58,5 @@ export function readDir(
 ): Observable<string[] | Buffer[] | Dirent[]> {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  return from(promises.readdir(path, options));
+  return defer(() => promises.readdir(path, options));
 }

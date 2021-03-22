@@ -21,7 +21,9 @@ describe('readFile', () => {
       ['path', { encoding: null }],
       ['path', { flag: 'r' }],
     ])('should pass path %p and options %p', (path, options) => {
-      readFile(path, options);
+      const source$ = readFile(path, options);
+      expect(spy).not.toBeCalled();
+      source$.subscribe();
       expect(spy).toBeCalledWith(path, options);
     });
   });
@@ -37,7 +39,9 @@ describe('readFile', () => {
     ] as [PathLike, { encoding: BufferEncoding; flag?: string }][])(
       'should pass path %p and options %p',
       (path, options) => {
-        readFile(path, options);
+        const source$ = readFile(path, options);
+        expect(spy).not.toBeCalled();
+        source$.subscribe();
         expect(spy).toBeCalledWith(path, options);
       },
     );

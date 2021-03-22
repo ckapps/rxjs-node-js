@@ -1,5 +1,5 @@
 import { promises, PathLike, BaseEncodingOptions, Mode, OpenMode } from 'fs';
-import { from, Observable } from 'rxjs';
+import { defer, Observable } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 
 export type WriteFileOptions = BaseEncodingOptions & {
@@ -99,7 +99,7 @@ export function writeFile(
   data: string | Uint8Array,
   options?: WriteFileOptions | null,
 ): Observable<WriteFileResult> {
-  return from(promises.writeFile(path, data, options)).pipe(
+  return defer(() => promises.writeFile(path, data, options)).pipe(
     mapTo({ path, data }),
   );
 }

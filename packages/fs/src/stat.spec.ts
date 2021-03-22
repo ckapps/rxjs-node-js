@@ -42,7 +42,9 @@ describe('stat', () => {
   test.each([['path'], ['path-2'], [new URL('file:///dev/node')]])(
     'should pass path %p',
     path => {
-      stat(path);
+      const source$ = stat(path);
+      expect(spy).not.toBeCalled();
+      source$.subscribe();
       expect(spy).toBeCalledWith(path);
     },
   );

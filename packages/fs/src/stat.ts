@@ -1,5 +1,5 @@
 import { promises, PathLike } from 'fs';
-import { from } from 'rxjs';
+import { defer } from 'rxjs';
 
 /**
  * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -8,5 +8,5 @@ import { from } from 'rxjs';
  * An observable that emits with the file status for the given `path`.
  */
 export function stat(path: PathLike) {
-  return from(promises.stat(path));
+  return defer(() => promises.stat(path));
 }

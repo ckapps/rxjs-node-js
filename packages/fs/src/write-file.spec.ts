@@ -22,7 +22,9 @@ describe('writeFile', () => {
       ['path', data, { encoding: null }],
       ['path', data, { flag: 'w' }],
     ])('should pass path %p, data %p and options %p', (path, data, options) => {
-      writeFile(path, data, options);
+      const source$ = writeFile(path, data, options);
+      expect(spy).not.toBeCalled();
+      source$.subscribe();
       expect(spy).toBeCalledWith(path, data, options);
     });
   });
@@ -39,7 +41,9 @@ describe('writeFile', () => {
     ] as [PathLike, string, WriteFileOptions][])(
       'should pass path %p, data %p and options %p',
       (path, data, options) => {
-        writeFile(path, data, options);
+        const source$ = writeFile(path, data, options);
+        expect(spy).not.toBeCalled();
+        source$.subscribe();
         expect(spy).toBeCalledWith(path, data, options);
       },
     );
