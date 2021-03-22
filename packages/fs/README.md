@@ -20,6 +20,7 @@ npm i @ckapp/rxjs-node-fs
 
 ### Observables
 
+- `appendFile`
 - `readDir`
 - `readFile`
 - `stat`
