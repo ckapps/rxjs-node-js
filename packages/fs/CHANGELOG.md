@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/ckapps/rxjs-node-js/compare/v0.4.0...v0.4.1) (2021-03-22)
+
+
+### Bug Fixes
+
+* **rxjs-node-fs:** defer file operations to point of subscription ([9ee3c43](https://github.com/ckapps/rxjs-node-js/commit/9ee3c43277decd3cf7eed00ae2b30b508b6d1c69))
+
+
+
+
+
 # [0.4.0](https://github.com/ckapps/rxjs-node-js/compare/v0.3.0...v0.4.0) (2021-03-22)
 
 
