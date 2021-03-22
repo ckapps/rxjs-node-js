@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/ckapps/rxjs-node-js/compare/v0.3.0...v0.4.0) (2021-03-22)
+
+
+### Features
+
+* **rxjs-node-fs:** add append file observable creator ([069f3b2](https://github.com/ckapps/rxjs-node-js/commit/069f3b2a42c3dca602853b455d0d7f59dcfced72))
+
+
+
+
+
 # [0.3.0](https://github.com/ckapps/rxjs-node-js/compare/v0.2.0...v0.3.0) (2021-02-16)
 
 
