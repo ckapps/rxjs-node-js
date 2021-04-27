@@ -20,14 +20,11 @@ npm i @ckapp/rxjs-node-process
 
 ### Observables
 
-- `appendFile`
-- `readDir`
-- `readFile`
-- `stat`
-- `watch`
-- `writeFile`
+- `platform$`
 
 ### Operators
 
+- `filterNotOnPlatforms`
+- `filterOnPlatforms`
 - `takeOnPlatforms`
 - `skipOnPlatforms`
