@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
@@ -24,9 +24,9 @@ jobs:
           git config --global user.name "Bump version - ${{ github.repository }} (by ${{ github.actor }})"
           git config --global user.email "${{ github.repository }}-version-bump@users.noreply.github.com"
 
-      - run: npm ci
-      - run: npm run build
-      - run: npm run ci:release
+      - run: yarn install
+      - run: yarn build
+      - run: yarn ci:release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 

@@ -1,7 +1,5 @@
 ![CI](https://github.com/ckapps/rxjs-node-js/workflows/CI/badge.svg)
 
-<!-- [![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs-node-js.svg)](https://www.npmjs.com/@ckapp/rxjs-node-js) -->
-
 [![Coverage Status](https://coveralls.io/repos/github/ckapps/rxjs-node-js/badge.svg?branch=master)](https://coveralls.io/github/ckapps/rxjs-node-js?branch=master)
 
 # @ckapp/rxjs-node-js
