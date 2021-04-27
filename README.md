@@ -9,3 +9,4 @@ Monorepo for providing [RxJS](https://www.npmjs.com/package/rxjs) extensions whe
 ## Packages
 
 - [`@ckapp/rxjs-node-fs`](./packages/fs/README.md) [![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs-node-fs.svg)](https://www.npmjs.com/@ckapp/rxjs-node-fs)
+- [`@ckapp/rxjs-node-process`](./packages/process/README.md) [![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs-node-process.svg)](https://www.npmjs.com/@ckapp/rxjs-node-process)

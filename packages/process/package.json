@@ -1,0 +1,32 @@
+{
+  "name": "@ckapp/rxjs-node-process",
+  "version": "0.4.1",
+  "author": "Chris",
+  "bugs": {
+    "url": "https://github.com/ckapps/rxjs-node-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckapps/rxjs-node-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -b ./tsconfig.build.json",
+    "test": "jest"
+  },
+  "files": [
+    "**/*.d.ts",
+    "lib/**/!(*.tsbuildinfo)",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "rxjs": "^6.6.6"
+  }
+}
