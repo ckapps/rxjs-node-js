@@ -12,11 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - name: npm install
-        run: npm ci
-      - name: coverage report
-        run: npm run test:coverage
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn test:coverage
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
