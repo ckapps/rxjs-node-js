@@ -15,9 +15,9 @@ jobs:
           fetch-depth: 0
 
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2.5.0
         with:
-          node-version: '12.x'
+          node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Setup git
         run: |
