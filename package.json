@@ -21,7 +21,7 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/config-lerna-scopes": "^15.0.0",
-    "@tsconfig/node14": "^1.0.0",
+    "@tsconfig/node14": "^1.0.1",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
