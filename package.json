@@ -14,7 +14,8 @@
     "release": "lerna publish --conventional-graduate",
     "release:pre": "lerna publish --conventional-prerelease",
     "test": "lerna run test --parallel",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
@@ -28,7 +29,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^4.3.0",
+    "husky": "^7.0.4",
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
     "lint-staged": "^12.1.2",
