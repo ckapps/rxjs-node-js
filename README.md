@@ -2,6 +2,8 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/ckapps/rxjs-node-js/badge.svg?branch=master)](https://coveralls.io/github/ckapps/rxjs-node-js?branch=master)
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
 # @ckapp/rxjs-node-js
 
 Monorepo for providing [RxJS](https://www.npmjs.com/package/rxjs) extensions when working with `node.js`.
