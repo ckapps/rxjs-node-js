@@ -9,6 +9,10 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'monthly'
+    commit-message:
+      prefix: 'chore'
+      prefix-development: 'chore'
+      include: 'scope'
     labels:
       - 'dependencies'
       - ':gear: npm'
@@ -21,6 +25,10 @@ updates:
     directory: '/packages/fs'
     schedule:
       interval: 'monthly'
+    commit-message:
+      prefix: 'fix(rxjs-node-fs)'
+      prefix-development: 'chore(rxjs-node-fs)'
+      include: 'scope'
     labels:
       - 'dependencies'
       - ':gear: npm'
@@ -31,6 +39,10 @@ updates:
     directory: '/packages/process'
     schedule:
       interval: 'monthly'
+    commit-message:
+      prefix: 'fix(rxjs-node-process)'
+      prefix-development: 'chore(rxjs-node-process)'
+      include: 'scope'
     labels:
       - 'dependencies'
       - ':gear: npm'
@@ -41,6 +53,9 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    commit-message:
+      prefix: 'chore'
+      include: 'scope'
     labels:
       - 'dependencies'
       - ':rocket: ci'
