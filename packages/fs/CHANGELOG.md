@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/ckapps/rxjs-node-js/compare/v0.5.0...v0.5.1) (2021-12-06)
+
+**Note:** Version bump only for package @ckapp/rxjs-node-fs
+
+
+
+
+
 # [0.5.0](https://github.com/ckapps/rxjs-node-js/compare/v0.4.1...v0.5.0) (2021-04-27)
 
 **Note:** Version bump only for package @ckapp/rxjs-node-fs
