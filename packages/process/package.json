@@ -27,6 +27,6 @@
     "README.md"
   ],
   "peerDependencies": {
-    "rxjs": "^6.6.6"
+    "rxjs": "~6.6.6"
   }
 }
