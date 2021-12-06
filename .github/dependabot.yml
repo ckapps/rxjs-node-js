@@ -26,8 +26,8 @@ updates:
     schedule:
       interval: 'monthly'
     commit-message:
-      prefix: 'fix(rxjs-node-fs)'
-      prefix-development: 'chore(rxjs-node-fs)'
+      prefix: 'fix'
+      prefix-development: 'chore'
       include: 'scope'
     labels:
       - 'dependencies'
@@ -40,8 +40,8 @@ updates:
     schedule:
       interval: 'monthly'
     commit-message:
-      prefix: 'fix(rxjs-node-process)'
-      prefix-development: 'chore(rxjs-node-process)'
+      prefix: 'fix'
+      prefix-development: 'chore'
       include: 'scope'
     labels:
       - 'dependencies'
