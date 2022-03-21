@@ -1,6 +1,6 @@
 {
   "name": "@ckapp/rxjs-node-fs",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": "Chris",
   "bugs": {
     "url": "https://github.com/ckapps/rxjs-node-js/issues"
