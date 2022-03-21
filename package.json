@@ -8,8 +8,8 @@
   },
   "scripts": {
     "build": "lerna run build --parallel",
-    "ci:release": "yarn release -- --yes",
-    "ci:release:pre": "yarn release:pre -- --yes",
+    "ci:release": "yarn release --yes",
+    "ci:release:pre": "yarn release:pre --yes",
     "lint": "eslint .",
     "release": "lerna publish --conventional-graduate",
     "release:pre": "lerna publish --conventional-prerelease",
