@@ -13,7 +13,7 @@ jobs:
     if: "!contains(github.event.head_commit.author.name, 'Bump version')"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # this seems to be needed by lerna to work as expected
           fetch-depth: 0
