@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.5](https://github.com/ckapps/rxjs-node-js/compare/v0.5.4...v0.5.5) (2022-03-21)
+
+
+### Bug Fixes
+
+* provide engine.node and @types/node for v14 ([4df9891](https://github.com/ckapps/rxjs-node-js/commit/4df9891a2ad9945803fd7d475b55a4b364ef6d0b))
+
+
+
+
+
 ## [0.5.4](https://github.com/ckapps/rxjs-node-js/compare/v0.5.3...v0.5.4) (2022-03-21)
 
 
