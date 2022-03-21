@@ -15,8 +15,8 @@
     },
     "version": {
       "allowBranch": [
-        "master",
-        "release/*"
+        "main",
+        "next"
       ]
     }
   }
