@@ -4,6 +4,10 @@ name: Pre-Release
     branches:
       - next
 
+env:
+  # Disable husky
+  HUSKY: 0
+
 jobs:
   bump:
     runs-on: ubuntu-latest

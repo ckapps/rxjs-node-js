@@ -4,6 +4,10 @@ name: Publish
     branches:
       - main
 
+env:
+  # Disable husky
+  HUSKY: 0
+
 jobs:
   publish:
     runs-on: ubuntu-latest
