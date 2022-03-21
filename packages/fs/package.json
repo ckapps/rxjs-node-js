@@ -18,6 +18,9 @@
     "build": "tsc -b ./tsconfig.build.json",
     "test": "jest"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "files": [
     "**/*.d.ts",
     "lib/**/!(*.tsbuildinfo)",
