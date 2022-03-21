@@ -8,7 +8,8 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "message": "build: publish %s"
+      "message": "build: publish %s",
+      "verifyAccess": false
     },
     "run": {
       "stream": true
