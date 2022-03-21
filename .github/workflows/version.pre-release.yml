@@ -31,4 +31,4 @@ jobs:
       - run: yarn build
       - run: yarn ci:release:pre
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
