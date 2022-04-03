@@ -7,6 +7,7 @@ version: 2
 updates:
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
+    open-pull-requests-limit: 15
     schedule:
       interval: 'monthly'
     commit-message:
@@ -23,6 +24,7 @@ updates:
   ## For package @ckapp/rxjs-node-fs
   - package-ecosystem: 'npm'
     directory: '/packages/fs'
+    open-pull-requests-limit: 15
     schedule:
       interval: 'monthly'
     commit-message:
@@ -37,6 +39,7 @@ updates:
   ## For package @ckapp/rxjs-node-process
   - package-ecosystem: 'npm'
     directory: '/packages/process'
+    open-pull-requests-limit: 15
     schedule:
       interval: 'monthly'
     commit-message:
