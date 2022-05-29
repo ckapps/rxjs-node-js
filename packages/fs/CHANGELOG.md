@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/ckapps/rxjs-node-js/compare/v0.5.7...v0.6.0) (2022-05-29)
+
+
+### Features
+
+* **rxjs-node-fs:** add `rename` ([#56](https://github.com/ckapps/rxjs-node-js/issues/56)) ([ce51ffc](https://github.com/ckapps/rxjs-node-js/commit/ce51ffc970e24cf1512b824d88aebcd79ce4a10d))
+
+
+
+
+
 ## [0.5.7](https://github.com/ckapps/rxjs-node-js/compare/v0.5.7-next.0...v0.5.7) (2022-05-29)
 
 **Note:** Version bump only for package @ckapp/rxjs-node-fs
