@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.6](https://github.com/ckapps/rxjs-node-js/compare/v0.5.5...v0.5.6) (2022-05-29)
+
+
+### Bug Fixes
+
+* bump `rxjs` to 7.5 ([#51](https://github.com/ckapps/rxjs-node-js/issues/51)) ([b9ef3c5](https://github.com/ckapps/rxjs-node-js/commit/b9ef3c5173e856e277643bfad0621156f3ea0b58))
+
+
+
+
+
 ## [0.5.5](https://github.com/ckapps/rxjs-node-js/compare/v0.5.4...v0.5.5) (2022-03-21)
 
 
