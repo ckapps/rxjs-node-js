@@ -29,6 +29,7 @@ npm i @ckapp/rxjs-node-fs
 - `appendFile`
 - `readDir`
 - `readFile`
+- `rename`
 - `stat`
 - `watch`
 - `writeFile`
