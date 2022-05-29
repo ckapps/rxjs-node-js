@@ -1,4 +1,5 @@
 module.exports = {
+  maxWorkers: '25%',
   //   roots: ['<rootDir>/src'],
   transform: {
     '^.+\\.ts$': 'ts-jest',

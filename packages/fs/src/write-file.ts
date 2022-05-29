@@ -1,17 +1,8 @@
-import { promises, PathLike, BaseEncodingOptions, Mode, OpenMode } from 'fs';
+import { PathLike, promises, WriteFileOptions } from 'fs';
 import { defer, Observable } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 
-export type WriteFileOptions = BaseEncodingOptions & {
-  /**
-   * Specifies the file mode
-   */
-  mode?: Mode;
-  /**
-   * Specifies the flag used while writing to the file
-   */
-  flag?: OpenMode;
-};
+export { WriteFileOptions };
 
 interface WriteFileResult<T = string | Uint8Array> {
   /**
