@@ -1,6 +1,6 @@
 import { PathLike, promises, WriteFileOptions } from 'fs';
 import { defer, Observable } from 'rxjs';
-import { mapTo } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 export type AppendFileOptions = WriteFileOptions;
 
@@ -91,6 +91,6 @@ export function appendFile(
   options?: AppendFileOptions | null,
 ): Observable<AppendFileResult> {
   return defer(() => promises.appendFile(path, data, options)).pipe(
-    mapTo({ path, data }),
+    map(() => ({ path, data })),
   );
 }
