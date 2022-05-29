@@ -1,6 +1,6 @@
 {
   "name": "@ckapp/rxjs-node-process",
-  "version": "0.5.6",
+  "version": "0.5.7-alpha.0",
   "author": "Chris",
   "bugs": {
     "url": "https://github.com/ckapps/rxjs-node-js/issues"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.7-alpha.0](https://github.com/ckapps/rxjs-node-js/compare/v0.5.6...v0.5.7-alpha.0) (2022-05-29)
+
+
+### Bug Fixes
+
+* bump `rxjs` peer dep to 7.5 ([#53](https://github.com/ckapps/rxjs-node-js/issues/53)) ([65e099c](https://github.com/ckapps/rxjs-node-js/commit/65e099ca0ac782d7170af975b0bca65ec6cfddcc))
+
+
+
+
+
 ## [0.5.6](https://github.com/ckapps/rxjs-node-js/compare/v0.5.5...v0.5.6) (2022-05-29)
 
 
