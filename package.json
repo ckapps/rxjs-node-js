@@ -15,7 +15,7 @@
     "ci:release:pre": "yarn release:pre --yes",
     "lint": "eslint .",
     "release": "lerna publish --conventional-graduate",
-    "release:pre": "lerna publish --conventional-prerelease",
+    "release:pre": "lerna publish --conventional-prerelease --preid next --pre-dist-tag next",
     "test": "lerna run test --parallel",
     "test:coverage": "jest --coverage",
     "prepare": "husky install"
